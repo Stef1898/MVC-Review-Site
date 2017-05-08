@@ -1,0 +1,46 @@
+﻿@model IEnumerable<WeekProj5.Models.Review>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Customer Reviews</h2>
+
+<p> @Html.ActionLink("Add Review", "Create") </p>
+
+@foreach (var item in Model)
+{
+    <div class="col-sm-12 col-md-12" id="container">
+
+        <div class=" col-sm-2 col-md-2 id="row">
+            <h4>@Html.DisplayNameFor(model => model.Category.WeaponType)</h4>
+            <p>@Html.DisplayFor(modelItem => item.Category.WeaponType)</p>
+        </div>
+
+        <div class=" col-sm-1 col-md-1 id="row">
+            <h4>@Html.DisplayNameFor(model => model.Category2.Weapon)</h4>
+            <p>@Html.DisplayFor(modelItem => item.Category2.Weapon)</p>
+        </div>
+
+        <div class=" col-sm-2 col-md-2 id="row">
+            <h4>@Html.DisplayNameFor(model => model.CustomerName)</h4>
+            <p>@Html.DisplayFor(modelItem => item.CustomerName)</p>
+        </div>
+
+        <div class=" col-sm-4 col-md-4 id="row">
+            <h4>@Html.DisplayNameFor(model => model.CustomerReview)</h4>
+            <p>@Html.DisplayFor(modelItem => item.CustomerReview)</p>
+        </div>
+
+        <div class=" col-sm-2 col-md-2 id="row">
+            <h4>@Html.DisplayNameFor(model => model.PublishedDate)</h4>
+            <p>@Html.DisplayFor(modelItem => item.PublishedDate)</p>
+        </div>
+        <div class=" col-sm-1 col-md-1 id="row">
+            <p class="text-center">@Html.ActionLink("Details", "Details", new { id = item.ID }, new { role = "button", @class = "btn btn-primary" })
+</div>
+
+    </div>
+
+}
+

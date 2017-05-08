@@ -1,0 +1,27 @@
+﻿@model IEnumerable<WeekProj5.Models.WeapDetail>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Weapons</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@foreach (var item in Model)
+    { 
+    <div class="col-sm-6 col-md-6">
+        <div class="thumbnail">
+            <div class="caption text-center">
+                <h3>@Html.DisplayFor(modelItem => item.Category.WeaponType)</h3>
+                <h2>@Html.DisplayFor(modelItem => item.Category2.Weapon)</h2>
+                <p>@Html.DisplayFor(modelItem => item.Description)</p>
+                <p class="text-center">@Html.ActionLink("Details", "Details", new { id = item.ID }, new { role = "button", @class = "btn btn-primary" }) <a a href="~/Reviews/Index" target="_blank" class="btn btn-primary" role="button">Customer Reviews</a> </p>
+            </div>
+        </div>
+    </div>
+
+   
+}
+

@@ -1,0 +1,82 @@
+﻿* {
+    font-family: 'BioRhyme', serif;
+}
+
+body {
+    background-color:rgb(40, 40, 40);
+    
+}
+
+h1, h2, h3, h4, h5 {
+
+    color:green;
+}
+
+p {
+    color:white;
+}
+
+/*Categories*/
+table.table {
+    color:green;
+}
+
+/*Home*/
+
+dl.dl-horizontal {
+    color:white;
+}
+
+div.form-horizontal {
+    color:green;
+}
+
+
+/*Jumbotron*/
+
+.mainSec {
+
+    background-image: url('../images/Andromeda galaxy.jpg');
+}
+
+/*Navbar*/
+
+div#navvy.navbar.navbar-inverse.navbar-static-top{
+    background-color:red;
+}
+
+#navvy a{
+
+    background-color:red;
+    color:white;
+
+}
+
+/*Contact*/
+
+address {
+    color:white;
+}
+
+/*Customer Reviews*/
+
+div#container {
+    display: table;
+    }
+
+div#row  {
+    display: table-row;
+    }
+
+/*Weapon Details*/
+
+div.thumbnail a{
+
+    background-color:rgb(0, 0, 206);
+}
+
+div.caption.text-center {
+
+    color:red;
+    background-color:rgb(40, 40, 40);
+}

@@ -1,0 +1,42 @@
+﻿@model WeekProj5.Models.WeapDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>WeapDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.WeaponType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category.WeaponType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Category2.Weapon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category2.Weapon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
