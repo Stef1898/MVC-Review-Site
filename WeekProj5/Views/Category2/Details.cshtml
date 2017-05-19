@@ -7,20 +7,21 @@
 <h2>Details</h2>
 
 <div>
+
     <h4>Category2</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Weapon)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Weapon)
-        </dd>
-
-    </dl>
+        <div class="col-sm-12 col-md-12">
+            <div class="thumbnail">
+                <div class="caption text-center">
+                    <h3>@Html.DisplayNameFor(model => model.Weapon)</h3>
+                    <h2>@Html.DisplayFor(model => model.Weapon)</h2>
+                </div>
+            </div>
+        </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
+
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
